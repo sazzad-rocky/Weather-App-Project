@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar_lower"
+    tools:context="com.example.saif_dream.weatherappproject.fragment.DayForecastFragment">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_location_icon"/>
+
+        <TextView
+            android:id="@+id/cityText"
+            style="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+    </LinearLayout>
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skydescForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/specialAttTextSize"
+                android:textStyle="bold"></TextView>
+            <!--  Image weather condition -->
+            <ImageView
+                android:id="@+id/forCondIcon"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Temperature(avg):"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dayForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Temperature(night):"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nightForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Temperature(eve):"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eveForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Temperature(morn):"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mornForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Temperature(Min-Max):"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tempForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Pressure:"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pressureForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Humidity:"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/weatherAttributeTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/humidityForecast"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="italic"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

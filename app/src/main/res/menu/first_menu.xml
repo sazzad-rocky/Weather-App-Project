@@ -1,0 +1,21 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.warriors.group.icare.ProfileListActivity">
+
+
+        <item
+            android:id="@+id/action_refresh"
+            android:icon="@android:drawable/stat_notify_sync"
+            android:orderInCategory="200"
+            android:title="refresh"
+            app:showAsAction="always"></item>
+        <item
+            android:id="@+id/action_search"
+            android:orderInCategory="100"
+            android:title="Search"
+            app:actionViewClass="android.support.v7.widget.SearchView"
+            app:showAsAction="always" />
+
+</menu>

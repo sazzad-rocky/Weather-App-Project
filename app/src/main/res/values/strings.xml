@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Weather App Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="unitTemp">°C</string>
+    <string name="lastUpdate">Last Update: </string>
+    <string name="windSpeed">Wind speed: </string>
+    <string name="windDirection">Wind direction: </string>
+    <string name="sunset">Sunset: </string>
+    <string name="sunrise">Sunrise: </string>
+
+    <string name="currentWeather">Today</string>
+    <string name="forecastHeader">Forecast Weather (7 Days)</string>
+
+    <string-array name="areaList">
+        <item>-Select A Area-</item>
+        <!--Saudi Arabia-->
+        <item>Makkah,SA</item>
+        <item>Jeddah,SA</item>
+        <item>Taif,SA</item>
+        <item>Riyadh,SA</item>
+        <item>Abha,SA</item>
+        <item>Medina,SA</item>
+
+        <!--BD-->
+        <item>Dhaka,BD</item>
+        <item>Narayangonj,BD</item>
+        <item>Chittagong,BD</item>
+        <item>Comilla,BD</item>
+        <item>Hobigonj,BD</item>
+        <item>Jessore,BD</item>
+        <item>Khulna,BD</item>
+        <item>Natore,BD</item>
+        <!--<item>Nawabgonj,BD</item>-->
+        <item>Rangpur,BD</item>
+        <item>Thakurgaon,BD</item>
+        <item>Rangamati,BD</item>
+
+        <!--India-->
+        <item>Delhi,IN</item>
+        <item>Hyderabad,IN</item>
+        <item>Jaipur,IN</item>
+        <item>Kolkatta,IN</item>
+        <item>Agra,IN</item>
+        <item>Ahmedabad,IN</item>
+        <item>Ajmer,IN</item>
+        <item>Bangalore,IN</item>
+
+        <!--Afghanistan-->
+        <item>Kabul,AF</item>
+        <item>Kandahar,AF</item>
+        <item>Jalalabad,AF</item>
+        <item>Herat,AF</item>
+        <item>Mazar-E-Sherif,AF</item>
+
+        <!--Australia-->
+        <item>Davis,AU</item>
+        <item>Casey,AU</item>
+        <item>Phillip,AU</item>
+        <!--<item>Mawson,AU</item>
+        <item>Macquarie Island,AU</item>
+        <item>North East Region,AU</item>
+        <item>Central East Region,AU</item>-->
+
+        <!-- Canada -->
+        <item>Toronto,CA</item>
+        <item>Victoria,CA</item>
+        <item>Quebec,CA</item>
+        <item>Montreal,CA</item>
+        <!--<item>St. John,CA</item>-->
+
+        <!--USA-->
+        <item>Atlanta,US</item>
+        <item>Boston,US</item>
+        <item>Chicago,US</item>
+        <item>Columbia,US</item>
+        <item>Columbus,US</item>
+        <item>Dallas,US</item>
+        <!--<item>Los Angeles,US</item>-->
+        <!--<item>New York,US</item>-->
+        <item>Oakland,US</item>
+        <item>Philadelphia,US</item>
+        <!--<item>San Francisco,US</item>-->
+        <item>Washington,US</item>
+
+        <!--UK-->
+        <item>London,GB</item>
+        <item>Manchester,GB</item>
+        <item>Ashford,GB</item>
+        <item>Boston,GB</item>
+        <item>Bristol,GB</item>
+        <item>Cambridge,GB</item>
+        <item>Dunbar,GB</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
